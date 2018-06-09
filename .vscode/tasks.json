@@ -1,0 +1,17 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "run ball_tracker headed",
+            "type": "shell",
+            "command": "python3 ball_tracker_mac.py headed"
+        },
+        {
+            "label": "run HSV Threshold",
+            "type": "shell",
+            "command": "python3 threshold_HSV.py"
+        }
+    ]
+}
