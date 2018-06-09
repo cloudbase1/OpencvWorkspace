@@ -130,7 +130,7 @@ while cv2.waitKey(1) != 27 and capWebcam.isOpened():  # until the Esc key is pre
       if circles is not None:  # this line is necessary to keep program from crashing on next line if no circles were found
          for circle in circles[0]:                           # for each circle
           x, y, radius = circle                                                                       # break out x, y, and radius
-          print ( "ball position x = " + str(x) + ", y = " + str(y) + ", radius = " + str(radius))       # print ball position and radius EATME
+          print ( "ball position x = " + str(x) + ", y = " + str(y) + ", radius = " + str(radius))       # print ball position and radius 
           cv2.circle(imgOriginal, (x, y), 3, (0, 255, 0), -1)           # draw small green circle at center of detected object
           cv2.circle(imgOriginal, (x, y), radius, (0, 0, 255), 3)                     # draw red circle around the detected object
 
